@@ -5,6 +5,11 @@ class Cliente{
     public DateTime fechaInscripcion {get;set;}
     public int tipoEntrada{get; set;}
     public int totalAbonado{get; set;}
+
+    public Cliente () {
+
+    }
+
     public Cliente(int DNI, string apellido, string nombre, DateTime fechaInscripcion, int tipoEntrada, int totalAbonado){
         this.DNI = DNI;
         this.apellido = apellido;
