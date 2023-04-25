@@ -33,5 +33,6 @@ static class Ticketera{
         List<string> estadisticas = new List<string>();
         estadisticas.Add(dicClientes.Count().ToString());
         return estadisticas;
+        
     }
 }
