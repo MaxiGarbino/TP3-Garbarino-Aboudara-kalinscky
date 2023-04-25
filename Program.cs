@@ -22,7 +22,7 @@ do
 }while(opcion != 5);
 
 void ObtenerEstadisticas(){
-    Console.WriteLine("La cantidad de cliente inscriptos son: "+ listaClientes.Count());
+    Console.WriteLine("La cantidad de cliente inscriptos son: "+ Ticketera.DevolverUltimoID());
     Console.WriteLine("La cantidad de entradas del tipo 1" + )
 }
 void ingresarCliente(){
@@ -37,4 +37,5 @@ void ingresarCliente(){
     tipoEntrada = Funciones.IngresarEnteroEnRango("Ingrese la opcion de la entrada: 1 ($15000),2 ($30000),1 ($10000),1 ($40000)",1,4);
     int[] precioEntradas = {0,15000,30000,10000,40000};
     totalAbonado = precioEntradas[tipoEntrada];
+    Ticketera.AgregarCliente(new Cliente(DNI,apellido,nombre,fechaInscripcion,tipoEntrada,totalAbonado));
 }
